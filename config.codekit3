@@ -169,6 +169,20 @@
 		"oAP": "\/dist\/index.html",
 		"oF": 0
 		},
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/dist\/node_modules",
+		"oF": 0
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/public\/images\/hanamaru-avatar.png": {
 		"ft": 32768,
 		"iS": 143321,
@@ -182,7 +196,7 @@
 		},
 	"\/public\/images\/maru-3.png": {
 		"ft": 32768,
-		"iS": 348505,
+		"iS": 317937,
 		"oA": 0,
 		"oAP": "\/dist\/images\/maru-3.png",
 		"oF": 0,
