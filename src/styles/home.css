@@ -28,6 +28,7 @@ a:hover {
  **************/
 
 .container {
+  height: 100vh;
   width: 100vw;
 }
 
@@ -98,6 +99,11 @@ a:hover {
 
 .profile-twitter {
   font-size: 1rem;
+}
+
+.profile-event__title {
+  font-weight: lighter;
+  color: #ccc;
 }
 
 /**************
