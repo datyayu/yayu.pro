@@ -27,9 +27,9 @@ a:hover {
   width: 100vw; }
 
 .content {
-  opacity: 0;
   width: 45vw;
   margin: 0 auto;
+  opacity: 0;
   -webkit-animation: 1250ms fade-in-from-bottom linear;
           animation: 1250ms fade-in-from-bottom linear;
   -webkit-animation-delay: 1250ms;
@@ -38,8 +38,8 @@ a:hover {
           animation-fill-mode: forwards; }
 
 .site-subtitle {
-  -webkit-animation: 1000ms fade-in-from-top linear;
-          animation: 1000ms fade-in-from-top linear;
+  -webkit-animation: 1250ms fade-in linear;
+          animation: 1250ms fade-in linear;
   -webkit-animation-delay: 3000ms;
           animation-delay: 3000ms;
   -webkit-animation-fill-mode: forwards;
@@ -79,8 +79,8 @@ a:hover {
  *  PROFILE   *
  **************/
 .profile {
-  text-align: center;
-  padding-top: 3rem; }
+  padding-top: 1rem;
+  text-align: center; }
 
 .profile-avatar {
   height: 175px;
@@ -93,6 +93,9 @@ a:hover {
 
 .profile-twitter {
   font-size: 1rem; }
+
+.profile-event {
+  text-align: center; }
 
 .profile-event__title {
   font-weight: lighter;
@@ -126,8 +129,8 @@ a:hover {
   width: 100%;
   padding: 0.25em 0;
   opacity: 0;
-  -webkit-animation: 500ms fade-in linear;
-          animation: 500ms fade-in linear;
+  -webkit-animation: 500ms fade-in-from-top linear;
+          animation: 500ms fade-in-from-top linear;
   -webkit-animation-delay: 2500ms;
           animation-delay: 2500ms;
   -webkit-animation-fill-mode: forwards;
