@@ -1,28 +1,12 @@
 //- Next 3 attending events info
 - 
-  var upcomingEvents = [
-    {
-      short: "Sunny Day Project TJ",
-      name: "Sunny Day Project",
-      location: "TJ, MX",
-      date: "3.30",
-      link: "https://www.facebook.com/events/591012437958153/"
-    },
-    {
-      short: "@JAM 2018 D2",
-      name: "@JAM 2018 Day 2",
-      location: "Tokyo, JP",
-      date: "5.27",
-      link: "http://www.at-jam.jp/series/atjam2018"
-    },
-    {
-      short: "ML 5th",
-      name: "The idolm@ster Million Live 5th Live",
-      location: "Saitama, JP",
-      date: "6.2-6.3",
-      link: "http://idolmaster.jp/event/million5th.php"
-    },
-  ]
+  var upcomingEvent = {
+    short: "Sunny Day Project TJ",
+    name: "Sunny Day Project",
+    location: "TJ, MX",
+    date: "3.30",
+    link: "https://www.facebook.com/events/591012437958153/"
+  }
 
 doctype html
 html(lang="en")
@@ -31,7 +15,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
-    title YayuP @ #{upcomingEvents[0].short}
+    title YayuP @ #{upcomingEvent.short}
 
     //- Styles
     link(rel="icon", href="favicon.ico", type="image/x-icon")
@@ -49,10 +33,12 @@ html(lang="en")
             h1.profile-name YayuP
             h3.profile-twitter
               a.profile-link(href="https://twitter.com/datyayu", target="blank") @datyayu
-            h4.profile-event__label Upcoming events: 
-            each event in upcomingEvents
-              h4.profile-event__title 
-                a.profile-link(href=event.link, target="_blank", rel="noop") #{event.date} | #{event.name} @ #{event.location}
+
+          div.profile-event
+            h4.profile-event__label 
+              | Next event: 
+              a.profile-link(href=upcomingEvent.link, target="_blank", rel="noop") 
+                | #{upcomingEvent.date} | #{upcomingEvent.name} @ #{upcomingEvent.location}
 
         //- Mid-page text
         //- TODO: Add more phrases and switch them randomly with js or something.
@@ -61,17 +47,13 @@ html(lang="en")
         //- Links section
         ul.link-list
           li.link-item
-            a.link(href="https://blogyayu.wordpress.com") blog
+            a.link(href="https://blogyayu.wordpress.com", target="_blank") blog
+          li.link-item
+            a.link(href="https://github.com/datyayu", target="_blank") github
           li.link-item
             a.link(href="https://track.yayu.pro") weetrack
           li.link-item
             a.link(href="https://livecalls.yayu.pro") IETTAIGA!!
-          li.link-item
-            a.link(href="https://risu.yayu.pro") risu-moe (rip)
-          li.link-item
-            a.link(href="https://github.com/datyayu", target="_blank") github
-          li.link-item
-            a.link(href="https://imgur.com/IBalaNJ", target="_blank") ¯\_(ツ)_/¯
 
       img.side-image.right-image(src="./images/matsuri-4.png")
 

@@ -33,16 +33,16 @@ a:hover {
 }
 
 .content {
-  opacity: 0;
   width: 45vw;
   margin: 0 auto;
+  opacity: 0;
   animation: 1250ms fade-in-from-bottom linear;
   animation-delay: 1250ms;
   animation-fill-mode: forwards;
 }
 
 .site-subtitle {
-  animation: 1000ms fade-in-from-top linear;
+  animation: 1250ms fade-in linear;
   animation-delay: 3000ms;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -82,8 +82,8 @@ a:hover {
  **************/
 
 .profile {
+  padding-top: 1rem;
   text-align: center;
-  padding-top: 3rem;
 }
 
 .profile-avatar {
@@ -99,6 +99,10 @@ a:hover {
 
 .profile-twitter {
   font-size: 1rem;
+}
+
+.profile-event {
+  text-align: center;
 }
 
 .profile-event__title {
@@ -136,7 +140,7 @@ a:hover {
   width: 100%;
   padding: 0.25em 0;
   opacity: 0;
-  animation: 500ms fade-in linear;
+  animation: 500ms fade-in-from-top linear;
   animation-delay: 2500ms;
   animation-fill-mode: forwards;
 }
